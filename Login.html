@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DefectTracker::Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/login.css">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body bgcolor="#123455">
+	<div class="div2">
+		<table>
+			<tr>
+				<td>
+					<div class="logoimage2">
+						<img src="media/loginPageLogo.png" class="logoimg" height="300px"
+							width="490px" />
+					</div>
+				</td>
+				<td>
+					<div class="divline"></div>
+
+				</td>
+
+				<td>
+					<div class="testbox">
+						<h1>Login</h1>
+						<form action="CommonController" method="post">
+
+							<hr>
+							<div id="invalidMessage" class="invalidMessage" name="invalidMessage"></div>
+
+							<br>
+
+							<table>
+								<tr>
+									<td>
+										<div class="div3">
+											<img src="media/Mail-at-icon.png" />
+										</div>
+									</td>
+									<td><input type="email" name="loginid" id="loginid" placeholder="User Id" required /></td>
+								</tr>
+								<tr>
+									<td><br>
+										<div class="div3">
+											<img src="media/lock.png" />
+										</div></td>
+									<td><br> <input type="password" name="password" id="password" placeholder="Password" required /></td>
+								</tr>
+							</table>
+							<br>
+
+							<p>
+								By clicking Login, you agree on our terms and condition.
+							</p>
+							<input type="hidden" name="action" class="action" id="action" value="login"> 
+							<input class="loginbutton" type="submit" name="submit" value="Login">
+						</form>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		var w_urlParameters = window.location.search.substring(1);
+		var w_parameterValuePair = w_urlParameters.split("&");
+		for ( var i = 0; i < w_parameterValuePair.length; i++) {
+			var w_pair = w_parameterValuePair[i].split("=");
+			if (w_pair[0] == "success" && w_pair[1] == "no") {
+				document.getElementById('invalidMessage').innerHTML = 'Invalid Login Id / Password';
+			}
+		}
+	</script>
+</body>
+</html>

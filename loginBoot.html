@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="bootstrap-3.3.7-dist/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/loginBootStyle.css">
+<title>LoginBootStrap</title>
+<style>
+</style>
+</head>
+<body>
+	<div class="container">
+		<!--  -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 mainDiv">
+				<div class="row">
+					<div class="col-sm-12">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-lg loginHereBtn" data-toggle="modal" data-target="#myModal">Login Here</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+							aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog loginModalDialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										<h2 class="modalName">Login to DefectTracker</h2>
+									</div>
+									<form action="CommonController" method="post">
+									<div class="modal-body">	
+									<div id="invalidMessage" class="invalidMessage" name="invalidMessage"></div>
+									<div class="input-group inputGrpStyle">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="loginid" type="email" class="form-control inputStyle" name="loginid" placeholder="Email" required>                                        
+                                    </div>		
+                                    <div class="input-group inputGrpStyle">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="password" type="password" class="form-control inputStyle" name="password" placeholder="Password" required>
+                                    </div>
+                                    <input type="hidden" name="action" class="action" id="action" value="login">
+                                    <input type="hidden" name="bootstrap" class="bootstrap" id="bootstrap" value="bootstrap">						 
+              					</div>
+									
+									<div class="modal-footer loginModalFooter">
+									<input class="btn btn-primary loginBtn" type="submit" name="submit" value="Login">
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="media/loginPageLogoBoot.png"
+							class="img-responsive" alt="Cinque Terre">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var w_urlParameters = window.location.search.substring(1);
+		var w_parameterValuePair = w_urlParameters.split("&");
+		for ( var i = 0; i < w_parameterValuePair.length; i++) {
+			var w_pair = w_parameterValuePair[i].split("=");
+			if (w_pair[0] == "success" && w_pair[1] == "no") {
+				document.getElementById('invalidMessage').innerHTML = 'Invalid Login Id / Password';
+			}
+		}
+	</script>
+</body>
+</html>
