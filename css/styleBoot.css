@@ -1,0 +1,135 @@
+.logoImageStyle{
+	height:35px;
+	width:120px;
+}
+.navbar-default {
+    background-color: #123455;
+    color:white;
+}
+.navbar-fixed-top{
+	min-height: 60px;
+}
+
+.nameStyle{
+line-height: 60px;
+font-size:25px;
+margin-left:-30px;
+}
+.userName{
+	color:white;
+
+}
+.navbar-login
+{
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+    color:black;
+}
+.dropdown{
+	width:110%;
+}
+.btn{
+	width:100%;
+}
+
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+body{
+	margin-top:6%;
+}
+
+.pagetitlediv{
+	text-align:left;
+	font-size:150%;
+}
+.listRow{
+	margin-top:20px;
+}
+.headerbtnn{
+	margin-right:10px;
+}
+.listTable{
+	
+	border-radius:6px;
+	
+}
+        #thead, #tbody, #tr, #td, #th { display: block; }
+
+        #tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        #thead #th {
+            height: 40px;
+			background-color: #123455;
+			color: white;
+            /*text-align: left;*/
+        }
+
+        #tbody {
+            height: 410px;
+            overflow-y: auto;
+        }
+
+        #thead {
+            /* fallback */
+        }
+
+
+        #tbody #td, #thead #th {
+            width: 14%;
+            float: left;
+            text-align:center;
+        }
+        
+ .prioritydiv {
+	border-radius: 100%;
+}
+
+#priorityCritical {
+	background-color: red;
+	color: red;
+}
+
+#priorityMedium {
+	background-color: yellow;
+	color: yellow;
+}
+
+#priorityHigh {
+	background-color: orange;
+	color: orange;
+}
+
+#priorityLow {
+	background-color: lightgreen;
+	color: lightgreen;
+}
+footer{
+	text-align:center;
+}
+.headerbtnn{
+	cursor: pointer;
+}
+.formRow{
+	border: 1px solid red;
+	border-radius:20px;
+	text-align:center;
+}
+table{
+	border: 1px solid red;
+	border-radius:20px;
+}

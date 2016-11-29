@@ -1,0 +1,144 @@
+div {
+	border: 10px;
+	border-radius: 7px;
+}
+
+div.div2 {
+	margin-top: 5%;
+	background-color: #f2f2f2;
+	height: 500px;
+	margin-left: 190px;
+	width: 70%;
+}
+
+.divline {
+	height: 470px;
+	border: 0.3px;
+	border-right: 0.3px solid #a9a9a9;
+	color: #a9a9a9;
+	opacity: 0.3;
+}
+
+div.div3 {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	background-color: #3a57af;
+	margin-left: 5px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+img {
+	border-radius: 100%;
+}
+
+.logoimg {
+	border-radius: 1%;
+	margin-top: 10%;
+}
+
+.invalidMessage{
+	color: red;
+	text-align:center;
+	font-size: 18px;
+}
+
+body,input,textarea,select {
+	font-family: 'Dosis', sans-serif;
+	font-size: 20px;
+}
+
+p {
+	font-size: 12px;
+	width: 150px;
+	display: inline-block;
+	margin-left: 18px;
+}
+
+h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	color: #4c4c4c;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.logoimage2 {
+	margin: 20px auto;
+	width: 490px;
+	height: 450px;
+	margin-left: 20px;
+	margin-top: none;
+	boder: 20px;
+	border-right: 10px solid red;
+	border-style: solid;
+	border-color: #f4f4f4;
+}
+
+.testbox {
+	margin: 20px auto;
+	width: 340px;
+	height: 360px;
+	margin-left: 25px;
+	margin-top: 13px;
+	background-color: #f2f2f2;
+	border: 5px;
+	border-style: solid;
+	border-color: #f2f2f2;
+	border-top-color: #3a57af;
+	border-bottom-color: #3a57af;
+}
+
+form {
+	margin: 0 30px;
+}
+
+hr {
+	color: #a9a9a9;
+	opacity: 0.3;
+	width: 100%;
+}
+
+input[type=text],input[type=password],[type=email] {
+	width: 230px;
+	height: 40px;
+	border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+	background-color: #fff;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+	border: solid 1px #cbc9c9;
+}
+
+.loginbutton {
+	font-weight: 600;
+	margin: 10px 8px 20px 0px;
+	float: right;
+	background-color: #3a57af;
+	box-shadow: 0 3px rgba(58, 87, 175, .75);
+	transition: all 0.1s linear 0s;
+	top: 0px;
+	position: relative;
+}
+
+.loginbutton:hover {
+	top: 3px;
+	background-color: #2e458b;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+input[type="submit"] {
+	
+	border: none;
+	width: 100px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
